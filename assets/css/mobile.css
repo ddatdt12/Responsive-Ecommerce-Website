@@ -1,0 +1,119 @@
+.nav__toggle {
+  display: block;
+}
+.list {
+  position: fixed;
+  top: 79.42px;
+  right: -100%;
+  background: var(--white-color);
+  height: 100vh;
+  z-index: 3;
+  display: flex;
+  flex-direction: column;
+  transition: 0.5s;
+}
+.list .item {
+  text-align: center;
+  font-size: 1.25rem;
+}
+.list .item:hover,
+.nav__menu > div i:hover {
+  background-color: var(--gray-color);
+  color: var(--primary-color);
+  cursor: pointer;
+}
+.nav__menu > div i {
+  display: inline-block;
+  padding: 0.75rem;
+  font-size: 2rem;
+  margin: 0rem 0.9rem;
+}
+.nav__menu > div {
+  display: flex;
+}
+.nav__menu {
+  justify-content: flex-end;
+}
+.show-menu {
+  right: 0;
+}
+
+.list {
+  width: 230px;
+}
+.menu .item a {
+  display: inline-block;
+  width: 100%;
+  padding: 1.5rem 1rem;
+}
+/* Home */
+#home .home_container h1 {
+  font-size: 4rem;
+}
+#home .home_container span {
+  font-size: 1.5rem;
+  margin-bottom: 2rem;
+}
+#home .home_container img {
+  height: auto;
+  width: 260px;
+}
+#home .home_container {
+  position: static;
+  display: block;
+}
+
+@media (max-width: 600px) {
+  .collection-container {
+    display: block;
+  }
+  .collection_men {
+    margin-right: 0;
+    margin-bottom: 2.5rem;
+  }
+  .products-container {
+    grid-template-columns: 1fr;
+  }
+  .product-img {
+    margin: auto;
+    height: auto;
+  }
+  .m-heading {
+    font-size: 1.8rem;
+  }
+  #new .products-container {
+    grid-template-columns: 1fr;
+  }
+
+  #subscribe .newsletter-container input[type='email'] {
+    padding: 1.25rem 1rem;
+    width: 90%;
+    margin: 0 1rem;
+  }
+  #subscribe .newsletter-container input[type='submit'] {
+    padding: 1rem 2rem;
+    margin: 1rem 1rem;
+  }
+  #sponsors-section .sponsors-container {
+    grid-template-columns: repeat(3, 1fr);
+  }
+  #sponsors-section .sponsors-container > *:last-child {
+    display: none;
+  }
+  .footer-container {
+    display: block;
+  }
+  .download,
+  .explore,
+  .our-services,
+  .follow {
+    justify-content: left;
+    margin: 2rem 3rem;
+  }
+  .download {
+    margin-top: 0;
+  }
+  #home .home_container {
+    padding: 2rem 2rem;
+  }
+}
